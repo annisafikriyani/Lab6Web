@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Learn | Workshop Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <p class="tagline">✿ 2026 WORKSHOP REGISTRATION ✿</p>
+            <h1>Bloom & Learn ♡</h1>
+            <p>Technology & Creative Workshop</p>
+            <p>Grow your skills, bloom your future.</p>
+        </header>
+
+        <!-- Informasi Workshop -->
+        <section class="info-workshop">
+            <button id="tombolInfo" type="button">
+                Sembunyikan Informasi
+            </button>
+
+            <p id="teksInfo">
+                Workshop ini membantu peserta mengembangkan
+                keterampilan teknologi dan kreativitas digital.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Form Pendaftaran ♡</h2>
+            <p class="subtitle">Isi data di bawah untuk bergabung dengan kami!</p>
+
+            <form id="formWorkshop" novalidate>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama"
+                       placeholder="Masukkan nama lengkap">
+
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                       placeholder="nama@email.com">
+
+                <label for="sesi">Pilih Sesi Workshop</label>
+                <select id="sesi">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Digital Creativity">Digital Creativity</option>
+                </select>
+
+                <p id="infoSesi" class="info-sesi"></p>
+
+                <label for="alasan">Alasan Mengikuti Workshop</label>
+                <textarea id="alasan" rows="4" maxlength="200"
+                    placeholder="Ceritakan alasan kamu..."></textarea>
+
+                <p class="counter">
+                    <span id="jumlahKarakter">0</span> / 200 karakter
+                </p>
+
+                <div class="buttons">
+                    <button type="submit" class="btn-daftar">
+                        Daftar Sekarang ♡
+                    </button>
+                    <button type="reset" class="btn-reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+
+            <p id="pesan" aria-live="polite"></p>
+            <div id="ringkasan" class="ringkasan" hidden></div>
+        </section>
+
+        <section class="card">
+            <h2>My Workshop Checklist ♡</h2>
+            <p class="subtitle">Persiapan sebelum mengikuti workshop 🎀</p>
+
+            <div class="todo-input">
+                <input type="text" id="inputTugas"
+                    placeholder="Tulis persiapanmu...">
+                <button type="button" id="tambahTugas">Tambah</button>
+            </div>
+
+            <p id="pesanTugas" aria-live="polite"></p>
+            <ul id="daftarTugas"></ul>
+            <p id="progressTugas">0 dari 0 persiapan selesai ♡</p>
+        </section>
+
+        <footer>
+            Made with ♡ — Bloom & Learn 2026
+        </footer>
+    </main>
+
+</body>
+</html>

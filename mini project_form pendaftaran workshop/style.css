@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #874f68;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+header {
+    background: #f8c9dc;
+    padding: 35px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #a54270;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.tagline {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px #eed0dd;
+}
+
+h2 {
+    color: #a54270;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #efc1d4;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    background: #fffafd;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #d980a8;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.counter {
+    text-align: right;
+    font-size: 12px;
+    color: #a78a98;
+}
+
+.info-sesi {
+    font-size: 13px;
+    color: #a54270;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-daftar {
+    background: #d980a8;
+    color: white;
+    flex: 2;
+}
+
+.btn-reset {
+    background: #f8dce8;
+    color: #a54270;
+    flex: 1;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#pesan {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.error {
+    color: #c0395b;
+}
+
+.success {
+    color: #38805a;
+}
+
+.ringkasan {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff0f6;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.ringkasan[hidden] {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+
+.info-workshop {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+}
+
+.sembunyi {
+    display: none;
+}
+
+#tombolInfo {
+    background: #d980a8;
+    color: white;
+}
+
+/* My Workshop Checklist */
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-input input {
+    flex: 1;
+    min-width: 0;
+}
+
+#tambahTugas {
+    background: #d980a8;
+    color: white;
+}
+
+#daftarTugas {
+    padding-left: 20px;
+}
+
+#daftarTugas li {
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+#daftarTugas button {
+    margin: 5px;
+    padding: 8px;
+    background: #f8dce8;
+    color: #a54270;
+}
+
+#daftarTugas .selesai span {
+    text-decoration: line-through;
+    color: #a78a98;
+}
+
+#progressTugas {
+    color: #a54270;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .todo-input {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* Checklist Baby Pink */
+
+#daftarTugas {
+    list-style: none;
+    padding: 0;
+}
+
+#daftarTugas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #fff7fa;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.label-tugas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    min-width: 0;
+    flex: 1;
+    cursor: pointer;
+}
+
+.label-tugas span {
+    overflow-wrap: anywhere;
+}
+
+.cek-tugas {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: #d980a8;
+    cursor: pointer;
+}
+
+#daftarTugas li.selesai span {
+    text-decoration: line-through;
+    color: #a78a98;
+}
+
+#daftarTugas .hapus-tugas {
+    background: #ffe0eb;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#daftarTugas .hapus-tugas:hover {
+    background: #ffc4da;
+}
